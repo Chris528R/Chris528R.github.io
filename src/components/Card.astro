@@ -1,0 +1,65 @@
+---
+interface Props {
+	title: string;
+	description: string;
+	link: string;
+	tags?: string[]; // Opcional: para poner "Python", "ML", etc.
+}
+
+const { title, description, link, tags = [] } = Astro.props;
+---
+
+<a href={link} target="_blank" class="card">
+	<div class="card-content">
+		<h4>{title}</h4>
+		<p>{description}</p>
+		{tags.length > 0 && (
+			<div class="tags">
+				{tags.map(tag => <span>{tag}</span>)}
+			</div>
+		)}
+	</div>
+</a>
+
+<style>
+	.card {
+		display: block;
+		background: white;
+		padding: 1.2rem;
+		border-radius: 12px;
+		text-decoration: none;
+		color: #333;
+		margin-bottom: 1rem;
+		border: 1px solid #eee;
+		transition: transform 0.2s, box-shadow 0.2s;
+		text-align: left;
+	}
+	.card:hover {
+		transform: translateY(-3px);
+		box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+		border-color: #003366;
+	}
+	h4 {
+		margin: 0;
+		color: #003366;
+		font-size: 1.1rem;
+	}
+	p {
+		margin: 0.5rem 0;
+		font-size: 0.9rem;
+		color: #666;
+	}
+	.tags {
+		display: flex;
+		gap: 0.5rem;
+		margin-top: 0.8rem;
+	}
+	.tags span {
+		background: #f0f4f8;
+		color: #003366;
+		padding: 2px 8px;
+		border-radius: 4px;
+		font-size: 0.75rem;
+		font-weight: bold;
+	}
+</style>

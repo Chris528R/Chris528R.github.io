@@ -1,0 +1,42 @@
+---
+interface Props {
+    label: string;
+    url: string;
+    primary?: boolean;
+    icon?: string; 
+}
+
+const { label, url, primary = false, icon = null } = Astro.props;
+
+const iconPrefix = (icon === 'linkedin' || icon === 'github') ? 'fab' : 'fas';
+---
+
+<a href={url} target="_blank" class:list={['btn', { primary }]}>
+    {icon && <i class={`${iconPrefix} fa-${icon}`} style="margin-right: 0.5rem;"></i>}
+    {label}
+</a>
+
+<style>
+	.btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0.8rem 1.5rem;
+		border-radius: 50px;
+		text-decoration: none;
+		font-weight: 600;
+		margin: 0.5rem 0;
+		transition: all 0.2s;
+		border: 2px solid #003366;
+		color: #003366;
+		background: transparent;
+	}
+	.btn.primary {
+		background: #003366;
+		color: white;
+	}
+	.btn:hover {
+		filter: brightness(1.2);
+		transform: scale(1.02);
+	}
+</style>
