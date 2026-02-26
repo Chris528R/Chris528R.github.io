@@ -1,33 +1,37 @@
-# Networking & Portfolio | ESCOM IPN
+# Networking & Portfolio | ESCOM IPN 
 
-Este repositorio contiene mi **Landing Page Personal** diseñada para networking rápido mediante tecnología **NFC** y códigos QR. El objetivo es facilitar el intercambio de información profesional durante eventos de la industria.
+Este repositorio contiene mi **Landing Page Personal** de alto rendimiento, diseñada específicamente para networking mediante tecnología **NFC** y códigos QR en eventos de la industria tecnológica y Fintech.
 
 ## Perfil Profesional
-Soy estudiante de **Ingeniería en Sistemas Computacionales** en la **ESCOM - IPN**, enfocado en la **Arquitectura de Software** y la implementación de soluciones con **Inteligencia Artificial**.
+Soy estudiante de **Ingeniería en Sistemas Computacionales** en la **ESCOM - IPN** (6to semestre), con enfoque en **Arquitectura de Software** y **Ciencia de Datos**. Cuento con experiencia en desarrollo Full-Stack y he representado al IPN en desafíos nacionales como el **Datatón INEGI 2026**.
 
 ---
 
-## Stack Tecnológico
-Para garantizar una carga instantánea en dispositivos móviles durante eventos, decidí utilizar:
-* **HTML5** y **CSS3** (Mobile First Design).
-* **GitHub Pages** para el despliegue (Hosting estático de alta disponibilidad).
-* **NFC Tools** para la integración con hardware.
+## Stack Tecnológico & Arquitectura
+Para garantizar una experiencia de usuario instantánea (LCP < 1.0s) en entornos de red congestionados, implementé:
+
+* **Astro Framework:** Arquitectura de islas para un envío mínimo de JavaScript al cliente.
+* **Component-Based Design:** Estructura escalable y mantenible.
+* **GitHub Actions:** Pipeline de CI/CD para despliegue automatizado en GitHub Pages.
+* **Mobile-First CSS:** Optimizado para la visualización rápida en smartphones durante eventos.
 
 ---
 
-## Vinculación Institucional (ESCOM)
-Este sitio también sirve como puente de contacto para la **vinculación entre la industria y la ESCOM**. Si eres ponente o representante de una empresa y te interesa:
-1. Impartir una plática o taller.
-2. Conocer el talento de nuestra comunidad estudiantil.
-3. Establecer convenios de colaboración.
-
-Puedes encontrar mis datos de contacto directo en la página principal.
+## Proyectos Destacados
+* **Brújula de las Utopías:** Desarrollo de aplicación móvil en colaboración con la **Embajada de Francia** y el **IFAL** para el evento "Noche de las Ideas 2025".
+* **Datatón INEGI 2026:** Análisis predictivo para el sector retail representando al **IPN**.
 
 ---
 
-## Contacto
-* **LinkedIn:** https://www.linkedin.com/in/rodriguez-mendoza-christopher/
-* **GitHub:** https://github.com/Chris528R
-* **Email:** 
-    * Personal: christopherrodmen@gmail.com
-    * Institucional: crodriguezm2001@alumno.ipn.mx
+## Vinculación Institucional (Misión ESCOM)
+Como parte de la delegación de la **ESCOM**, este sitio actúa como un canal formal para:
+* **Conferencias y Talleres:** Facilitar la invitación de expertos de la industria a nuestro campus.
+* **Talento Joven:** Conectar reclutadores con la comunidad de excelencia técnica de la ESCOM.
+* **Colaboración:** Establecer vínculos estratégicos entre empresas y la academia.
+
+---
+
+## Contacto Directo
+* **LinkedIn:** [rodriguez-mendoza-christopher](https://www.linkedin.com/in/rodriguez-mendoza-christopher/)
+* **GitHub:** [@Chris528R](https://github.com/Chris528R)
+* **Email:** `christopherrodmen@gmail.com` | `crodriguezm2001@alumno.ipn.mx`
