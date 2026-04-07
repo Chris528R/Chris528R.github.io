@@ -3,6 +3,13 @@ import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import ContactButton from "../components/ContactButton.astro";
 
+const talentLandProject = {
+  title: "Financial Scan 💳",
+  subtitle: "Reto Grupo Salinas Banco Azteca",
+  description: "App Fintech para educación financiera. Transforma comprobantes en aprendizaje mediante un pipeline de OCR e IA que identifica gastos hormiga. Incluye registro de gastos por voz y genera un 'Score IA' personalizado para medir la salud financiera.",
+  tags: ["Fintech", "IA & OCR", "Voice AI", "Hackathon"]
+};
+
 const highlights = [
   {
     title: "Data Analyst @ Datatón INEGI 2026",
@@ -43,141 +50,215 @@ const projects = [
 ];
 ---
 
-<Layout title="Networking | ESCOM IPN">
-	<main class="container">
-		<header class="hero">
-			<img
-				src="/Foto.png"
-				alt="Christopher Rodriguez Mendoza"
-				class="avatar"
-			/>
-			<h1>Christopher Rodriguez Mendoza</h1>
-			<p class="subtitle">
-				Software Architecture & AI Student @ <b>ESCOM IPN</b>
-			</p>
-		</header>
+<Layout title="Christopher Rodriguez | Software & AI">
+    <main class="container">
+        <header class="hero">
+            <img
+                src="/Foto.png"
+                alt="Christopher Rodriguez Mendoza"
+                class="avatar"
+            />
+            <h1>Christopher Rodriguez Mendoza</h1>
+            <p class="subtitle">
+                Software Architecture & AI Student @ <b>ESCOM IPN</b>
+            </p>
+        </header>
 
-		<section class="links">
-			<ContactButton
-				label="LinkedIn"
-				url="https://www.linkedin.com/in/rodriguez-mendoza-christopher/"
-				icon="linkedin"
-			/>
-			<ContactButton
-				label="GitHub"
-				url="https://github.com/Chris528R"
-				icon="github"
-			/>
-			<ContactButton label="Download CV" url="/cv.pdf" primary />
-		</section>
+        <section class="links">
+            <ContactButton
+                label="WhatsApp"
+                url="https://wa.me/525538771990" 
+                icon="mobile"
+            />
+            <ContactButton
+                label="Email"
+                url="mailto:christopherrodmen@gmail.com"
+                icon="envelope"
+            />
+            <ContactButton
+                label="LinkedIn"
+                url="https://www.linkedin.com/in/rodriguez-mendoza-christopher/"
+                icon="linkedin"
+            />
+            <ContactButton
+                label="GitHub"
+                url="https://github.com/Chris528R"
+                icon="github"
+            />
+            <ContactButton label="Download CV" url="/cv.pdf" primary />
+        </section>
 
-		<section class="experience">
-		<h2>Trayectoria y Logros</h2>
-		<div class="highlights-grid">
-			{highlights.map(h => (
-			<div class="highlight-item">
-				<i class={`fas fa-${h.icon}`}></i>
-				<div>
-				<h4>{h.title}</h4>
-				<p>{h.description}</p>
-				</div>
-			</div>
-			))}
-		</div>
-		</section>
+        <section class="current-hackathon">
+            <div class="hackathon-card">
+                <span class="live-badge">🔴 Hackeando en Talent Land</span>
+                <h3>{talentLandProject.title}</h3>
+                <p class="sponsor-subtitle"><i class="fas fa-trophy"></i> {talentLandProject.subtitle}</p>
+                <p>{talentLandProject.description}</p>
+                <div class="project-tags">
+                    {talentLandProject.tags.map(tag => <span class="badge">{tag}</span>)}
+                </div>
+            </div>
+        </section>
 
-		<section class="action-photo">
-		<img src="/Yo.jpeg" alt="Presentando proyectos de tecnología" class="presentation-img" />
-		<p class="caption">Presentando soluciones tecnológicas en eventos de innovación.</p>
-		</section>
+        <section class="experience">
+            <h2>Trayectoria y Logros</h2>
+            <div class="highlights-grid">
+                {highlights.map(h => (
+                <div class="highlight-item">
+                    <i class={`fas fa-${h.icon}`}></i>
+                    <div>
+                    <h4>{h.title}</h4>
+                    <p>{h.description}</p>
+                    </div>
+                </div>
+                ))}
+            </div>
+        </section>
 
+        <section class="action-photo">
+            <img src="/Yo.jpeg" alt="Presentando proyectos de tecnología" class="presentation-img" />
+            <p class="caption">Presentando soluciones tecnológicas en eventos de innovación.</p>
+        </section>
 
-		<section class="projects-grid">
-			<h2>Proyectos Destacados</h2>
-			{projects.map((p) => <Card {...p} />)}
-		</section>
+        <section class="projects-grid">
+            <h2>Proyectos Destacados</h2>
+            {projects.map((p) => <Card {...p} />)}
+        </section>
 
-		<footer class="school-footer">
-			<p>Delegación de Vinculación <b></b><a href="https://www.escom.ipn.mx/">ESCOM</a></b>
-			</p>
-			<small>Impulsando la innovación tecnológica en México</small>
-		</footer>
-		<ContactButton
-			label="Vinculación ESCOM"
-			url="mailto:escom_upis@ipn.mx?subject=Interés en Vinculación ESCOM"
-			icon="university"
-		/>
-	</main>
+        <footer class="simple-footer">
+            <p>Construido con código y ☕ para conocer personas</p>
+        </footer>
+    </main>
 </Layout>
 
 <style>
-	.container {
-		max-width: 600px;
-		margin: 0 auto;
-		padding: 2rem 1rem;
-		text-align: center;
-	}
-	.avatar {
-		width: 160px; 
-		height: 200px; 
-		object-fit: cover; 
-		border-radius: 80px; 
-		border: 4px solid #003366;
-		margin-bottom: 1.5rem;
-		box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-	}
-	.subtitle {
-		color: #555;
-		font-size: 1.1rem;
-	}
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+    .avatar {
+        width: 160px; 
+        height: 200px; 
+        object-fit: cover; 
+        border-radius: 80px; 
+        border: 4px solid #003366;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .subtitle {
+        color: #555;
+        font-size: 1.1rem;
+    }
 
-	.highlights-grid {
-		text-align: left;
-		margin-top: 1rem;
-	}
-	.highlight-item {
-		display: flex;
-		align-items: flex-start;
-		gap: 1rem;
-		margin-bottom: 1.5rem;
-		padding: 1rem;
-		background: rgba(255, 255, 255, 0.5);
-		border-radius: 8px;
-	}
-	.highlight-item i {
-		color: #003366;
-		font-size: 1.2rem;
-		margin-top: 3px;
-	}
-	.presentation-img {
-		width: 100%;
-		border-radius: 12px;
-		margin-top: 1rem;
-		filter: grayscale(20%);
-	}
-	.caption {
-		font-size: 0.8rem;
-		color: #777;
-		font-style: italic;
-	}
+    /* Estilos para el proyecto del hackathon */
+    .current-hackathon {
+        margin: 2.5rem 0;
+    }
+    .hackathon-card {
+        background: linear-gradient(135deg, rgba(0, 51, 102, 0.05) 0%, rgba(0, 77, 153, 0.1) 100%);
+        border: 2px solid #003366;
+        border-radius: 12px;
+        padding: 1.5rem;
+        text-align: left;
+        position: relative;
+        box-shadow: 0 8px 15px rgba(0,0,0,0.05);
+    }
+    .live-badge {
+        position: absolute;
+        top: -12px;
+        left: 20px;
+        background: #e74c3c;
+        color: white;
+        font-size: 0.8rem;
+        font-weight: bold;
+        padding: 0.2rem 0.8rem;
+        border-radius: 20px;
+        animation: pulse 2s infinite;
+    }
+    .hackathon-card h3 {
+        margin-top: 0.5rem;
+        color: #003366;
+    }
+    .project-tags {
+        display: flex;
+        gap: 0.5rem;
+        margin-top: 1rem;
+        flex-wrap: wrap;
+    }
+    .badge {
+        background: #003366;
+        color: white;
+        font-size: 0.75rem;
+        padding: 0.3rem 0.6rem;
+        border-radius: 4px;
+    }
 
-	.btn.primary {
-		background: linear-gradient(135deg, #003366 0%, #004d99 100%);
-		border: none;
-		box-shadow: 0 4px 15px rgba(0,51,102,0.3);
-	}
+    @keyframes pulse {
+        0% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.7); }
+        70% { box-shadow: 0 0 0 6px rgba(231, 76, 60, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0); }
+    }
 
-	.presentation-img {
-		width: 100%;
-		border-radius: 15px;
-		border: 8px solid white; 
-		box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-		margin: 2rem 0;
-	}
+    .highlights-grid {
+        text-align: left;
+        margin-top: 1rem;
+    }
+    .highlight-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+        padding: 1rem;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 8px;
+    }
+    .highlight-item i {
+        color: #003366;
+        font-size: 1.2rem;
+        margin-top: 3px;
+    }
+    .presentation-img {
+        width: 100%;
+        border-radius: 15px;
+        border: 8px solid white; 
+        box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        margin: 2rem 0;
+        filter: grayscale(20%);
+    }
+    .caption {
+        font-size: 0.8rem;
+        color: #777;
+        font-style: italic;
+    }
 
-	.school-footer .btn {
-		background: #f8faff;
-		border: 2px dashed #003366; 
-	}
+    .btn.primary {
+        background: linear-gradient(135deg, #003366 0%, #004d99 100%);
+        border: none;
+        box-shadow: 0 4px 15px rgba(0,51,102,0.3);
+    }
 
+    .simple-footer {
+        margin-top: 3rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid #eee;
+        color: #666;
+        font-size: 0.9rem;
+    }
+
+	.sponsor-subtitle {
+        color: #004d99;
+        font-size: 0.85rem;
+        font-weight: 600;
+        margin-top: -0.2rem;
+        margin-bottom: 0.8rem;
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+    }
+
+    .sponsor-subtitle i {
+        color: #f1c40f; /* Color dorado para el trofeo */
+    }
 </style>
