@@ -23,14 +23,6 @@ Para garantizar una experiencia de usuario instantánea (LCP < 1.0s) en entornos
 
 ---
 
-## Vinculación Institucional (Misión ESCOM)
-Como parte de la delegación de la **ESCOM**, este sitio actúa como un canal formal para:
-* **Conferencias y Talleres:** Facilitar la invitación de expertos de la industria a nuestro campus.
-* **Talento Joven:** Conectar reclutadores con la comunidad de excelencia técnica de la ESCOM.
-* **Colaboración:** Establecer vínculos estratégicos entre empresas y la academia.
-
----
-
 ## Contacto Directo
 * **LinkedIn:** [rodriguez-mendoza-christopher](https://www.linkedin.com/in/rodriguez-mendoza-christopher/)
 * **GitHub:** [@Chris528R](https://github.com/Chris528R)
